@@ -1,0 +1,10 @@
+{
+	"id": "quietype-testing",
+	"version": "1.0",
+	"title": {
+		"en_US": "QuieType Testing"
+	},
+	"description": {
+		"en_US": "A collection of QuieType's experimentations with Crosscode modding."
+    }
+}
