@@ -33,7 +33,6 @@ ig.ENTITY.WaveSlidingBlock = ig.ENTITY.WavePushPullBlock.extend({
         ig.ENTITY_KILL_CALL--
         this._killed = true
         this.coll._killed = true
-        this.parent(levelChange) //FIX
     },
     resetPos: null,
     ballHit(ballLike/*: ig.BallLike*/)/*: boolean*/ {
