@@ -1,3 +1,5 @@
+
+//adds a block that can slide and teleport
 ig.module('game.feature.puzzle.entities.wave-sliding-block')
     .requires('impact.base.actor-entity', 'impact.base.entity', 'impact.feature.effect.effect-sheet')
     .defines(() => {
@@ -7,14 +9,13 @@ ig.module('game.feature.puzzle.entities.wave-sliding-block')
             init(x_, y_, z_, settings) {
                 this.parent(x_, y_, z_, settings);
                 this.pushPullable = null
-                x_ = ig.mapStyle.get('waveblock')
                 this.initAnimations({
                     sheet: {
-                        src: x_.sheet,
+                        src: "media/entity/style/qt-cold-dng-puzzle.png",
                         width: 32,
                         height: 64,
-                        offX: 352,
-                        offY: 400,
+                        offX: 224,
+                        offY: 192,
                     },
                     aboveZ: 1,
                     wallY: 0.1,
