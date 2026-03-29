@@ -11,7 +11,7 @@ ig.module('game.feature.puzzle.entities.wave-sliding-block')
                 this.pushPullable = null
                 this.initAnimations({
                     sheet: {
-                        src: "media/entity/style/qt-cold-dng-puzzle.png",
+                        src: "media/entity/style/qt-cold-dng-puzzle.png", //there's a proper way to do this, but it isn't working :(
                         width: 32,
                         height: 64,
                         offX: 224,
@@ -58,7 +58,7 @@ ig.module('game.feature.puzzle.entities.wave-sliding-block')
                 sheet: new ig.EffectSheet('puzzle.sliding-block'),
                 handle: null,
             },
-            //look, maybe I just have no idea what I'm doing. If your reading this, and you see the stupidity of this entire kludge, ask me on discord (@quietype00) why I did all this. There's an explenation. Not a *good* explanation, but still.
+            //START KLUDGE
             show(noShowFx)/*: void*/ {
                 ig.game.showEntity(this)
                 if (this.effects.hideHandle) {
@@ -97,7 +97,7 @@ ig.module('game.feature.puzzle.entities.wave-sliding-block')
             onInteraction: null,
             onInteractionEnd: null,
             onKill(levelChange/*?: boolean*/)/*: void*/ {
-                if (!ig.ENTITY_KILL_CALL) throw Error('Called Entity .onKill() outside of ig.game.kill()')
+                if (!ig.ENTITY_KILL_CALL) throw Error('Called Entity .onKill() outside of ig.game.kill(). If you got this error, please let @quietype00 know on discord. Make sure to screenshot or record the error logs and installed mods, and a save file would be nice too.')
                 ig.ENTITY_KILL_CALL--
                 this._killed = true
                 this.coll._killed = true
