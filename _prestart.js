@@ -148,3 +148,139 @@ ig.module('game.feature.puzzle.entities.wave-sliding-block')
             //END KLUDGE
         })
     })
+
+    //add invisible steamPipe types for the inside of walls
+sc.STEAM_PIPE_TYPES.INVISHORIZONTAL = {
+    gfx: {
+        x: 1118,
+        y: 0,
+    },
+    scaleX: true,
+    size: {
+        x: 16,
+        y: 12,
+        z: 5,
+    },
+    renderHeight: 4,
+    points: [
+        {
+            x: 0,
+            y: 0.5,
+        },
+        {
+            x: 1,
+            y: 0.5,
+        },
+    ],
+}
+sc.STEAM_PIPE_TYPES.INVISVERTICAL = {
+    gfx: {
+        x: 1118,
+        y: 16,
+    },
+    scaleY: true,
+    size: {
+        x: 16,
+        y: 16,
+        z: 5,
+    },
+    renderHeight: 0,
+    points: [
+        {
+            x: 0.5,
+            y: 0,
+        },
+        {
+            x: 0.5,
+            y: 1,
+        },
+    ],
+}
+sc.STEAM_PIPE_TYPES.INVISCURVE_SE = {
+    gfx: {
+        x: 1118,
+        y: 0,
+    },
+    size: {
+        x: 16,
+        y: 12,
+        z: 5,
+    },
+    renderHeight: 4,
+    points: [
+        {
+            x: 1,
+            y: 0.5,
+        },
+        {
+            x: 0.5,
+            y: 1,
+        },
+    ],
+}
+sc.STEAM_PIPE_TYPES.INVISCURVE_SW = {
+    gfx: {
+        x: 1118,
+        y: 0,
+    },
+    size: {
+        x: 16,
+        y: 12,
+        z: 5,
+    },
+    renderHeight: 4,
+    points: [
+        {
+            x: 0,
+            y: 0.5,
+        },
+        {
+            x: 0.5,
+            y: 1,
+        },
+    ],
+}
+sc.STEAM_PIPE_TYPES.INVISCURVE_NE = {
+    gfx: {
+        x: 1118,
+        y: 16,
+    },
+    size: {
+        x: 16,
+        y: 16,
+        z: 5,
+    },
+    renderHeight: 0,
+    points: [
+        {
+            x: 0.5,
+            y: 0,
+        },
+        {
+            x: 1,
+            y: 0.5,
+        },
+    ],
+}
+sc.STEAM_PIPE_TYPES.INVISCURVE_NW = {
+    gfx: {
+        x: 1118,
+        y: 16,
+    },
+    size: {
+        x: 16,
+        y: 16,
+        z: 5,
+    },
+    renderHeight: 0,
+    points: [
+        {
+            x: 0.5,
+            y: 0,
+        },
+        {
+            x: 0,
+            y: 0.5,
+        },
+    ],
+}
